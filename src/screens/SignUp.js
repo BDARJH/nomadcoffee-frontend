@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
-import AuthLayout from "../components/auth/AuthLayout";
+import Layout from "../components/Layout";
 import BottomBox from "../components/auth/BottomBox";
 import Button from "../components/auth/Button";
 import FormBox from "../components/auth/FormBox";
@@ -82,7 +82,7 @@ function SingUp() {
     });
   };
   return (
-    <AuthLayout>
+    <Layout>
       <PageTitle title="Sign up" />
       <FormBox>
         <HeaderContainer>
@@ -144,7 +144,7 @@ function SingUp() {
         </form>
       </FormBox>
       <BottomBox cta="Have an account?" linkText="Log in" link={routes.home} />
-    </AuthLayout>
+    </Layout>
   );
 }
 export default SingUp;

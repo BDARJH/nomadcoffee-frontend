@@ -2,7 +2,7 @@ import { useReactiveVar } from "@apollo/client";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
-import { darkModeVar, disableDarkMode, enableDarkMode } from "../../apollo";
+import { darkModeVar, disableDarkMode, enableDarkMode } from "../apollo";
 
 const Container = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ const DarkModeBtn = styled.span`
   cursor: pointer;
 `;
 
-function AuthLayout({ children }) {
+function Layout({ children }) {
   const darkMode = useReactiveVar(darkModeVar);
   return (
     <Container>
@@ -39,4 +39,4 @@ function AuthLayout({ children }) {
   );
 }
 
-export default AuthLayout;
+export default Layout;

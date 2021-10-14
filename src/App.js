@@ -7,6 +7,8 @@ import { client, darkModeVar, isLoggedInVar } from "./apollo";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, GlobalStyles, lightTheme } from "./styles";
 import SignUp from "./screens/SignUp";
+import Add from "./screens/Add";
+import Shop from "./screens/Shop";
 import routes from "./routes";
 import { HelmetProvider } from "react-helmet-async";
 
@@ -28,6 +30,12 @@ function App() {
                   <SignUp />
                 </Route>
               ) : null}
+              <Route path={routes.add}>
+                <Add />
+              </Route>
+              <Route path={routes.shop}>
+                <Shop />
+              </Route>
               <Route>
                 <NotFound />
               </Route>

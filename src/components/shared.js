@@ -10,3 +10,15 @@ export const FatLink = styled.span`
   font-weight: 600;
   color: rgb(142, 142, 142);
 `;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const Subtitle = styled(FatLink)`
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+`;

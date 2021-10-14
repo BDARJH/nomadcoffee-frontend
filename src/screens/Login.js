@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { logUserIn } from "../apollo";
-import AuthLayout from "../components/auth/AuthLayout";
+import Layout from "../components/Layout";
 import BottomBox from "../components/auth/BottomBox";
 import Button from "../components/auth/Button";
 import FormBox from "../components/auth/FormBox";
@@ -70,7 +70,7 @@ function Login() {
     });
   };
   return (
-    <AuthLayout>
+    <Layout>
       <PageTitle title="Login" />
       <FormBox>
         <div>
@@ -117,7 +117,7 @@ function Login() {
         linkText="Sign up"
         link={routes.signUp}
       />
-    </AuthLayout>
+    </Layout>
   );
 }
 export default Login;
